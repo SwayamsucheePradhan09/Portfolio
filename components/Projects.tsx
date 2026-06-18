@@ -1,5 +1,5 @@
 'use client'
-import { motion } from 'framer-motion'
+import { motion, Variants } from 'framer-motion'
 import ScrambleText from './ScrambleText'
 import TiltCard from './TiltCard'
 import projectsData from '../data/projects'
@@ -9,7 +9,7 @@ const statusColors: Record<string, { bg: string; text: string; glow: string; dot
   'In Development': { bg: 'bg-amber-900/20', text: 'text-amber-400', glow: 'shadow-[0_0_8px_rgba(251,191,36,0.3)]', dot: 'bg-amber-400 animate-pulse' },
 }
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
@@ -17,7 +17,7 @@ const containerVariants = {
   }
 }
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, x: -40, scale: 0.98 },
   show: { 
     opacity: 1, x: 0, scale: 1,

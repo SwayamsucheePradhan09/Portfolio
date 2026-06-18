@@ -1,5 +1,5 @@
 'use client'
-import { motion } from 'framer-motion'
+import { motion, Variants } from 'framer-motion'
 import ScrambleText from './ScrambleText'
 import TiltCard from './TiltCard'
 
@@ -9,22 +9,25 @@ const eduData = [
     degree: "Bachelor of Technology in Computer Science",
     school: "Siksha 'O' Anusandhan University (ITER), Bhubaneswar",
     score: "CGPA - 7.9",
+    icon: "🎓"
   },
   {
     year: "2021",
     degree: "Class - XII (Senior Secondary)",
     school: "Tetrahedron Women's Higher Secondary School, Cuttack",
     score: "Percentage - 81.6%",
+    icon: "🏫"
   },
   {
     year: "2019",
     degree: "Class - X (Secondary)",
     school: "Sri Aurobindo Integral Education and Research Centre Matrubhumi, Dera, Angul",
     score: "Percentage - 82.3%",
+    icon: "📝"
   }
 ]
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
@@ -32,7 +35,7 @@ const containerVariants = {
   }
 }
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, x: -30, scale: 0.98 },
   show: { 
     opacity: 1, x: 0, scale: 1,

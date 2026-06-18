@@ -1,5 +1,5 @@
 'use client'
-import { motion, useMotionValue, useTransform } from 'framer-motion'
+import { motion, useMotionValue, useTransform, Variants } from 'framer-motion'
 import { useRef } from 'react'
 import ScrambleText from './ScrambleText'
 import TiltCard from './TiltCard'
@@ -32,7 +32,7 @@ const skillCategories = [
   }
 ]
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
@@ -40,7 +40,7 @@ const containerVariants = {
   }
 }
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 30, scale: 0.95 },
   show: { 
     opacity: 1, y: 0, scale: 1,
@@ -48,7 +48,7 @@ const cardVariants = {
   }
 }
 
-const tagVariants = {
+const tagVariants: Variants = {
   hidden: { opacity: 0, scale: 0.7 },
   show: { opacity: 1, scale: 1 }
 }

@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 
-const SECCTIONS = ['home', 'about', 'projects', 'skills', 'education', 'contact']
+const SECCTIONS = ['home', 'about', 'projects', 'skills', 'education', 'certifications', 'contact']
 
 export default function ScrollNav() {
   const [active, setActive] = useState('home')
