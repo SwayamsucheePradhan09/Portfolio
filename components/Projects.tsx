@@ -196,7 +196,7 @@ export default function Projects() {
                     </div>
                     {project.link ? (
                       <a href={project.link} target="_blank" className="animated-underline text-sm font-sans font-medium text-slate-300 hover:text-blue-400 transition-colors flex items-center gap-2 w-fit pb-1">
-                        View on GitHub Repo
+                        {project.link.includes('github.com') ? 'View on GitHub Repo' : 'View Live Site'}
                         <motion.svg 
                           className="w-4 h-4 ml-1"
                           whileHover={{ x: 3, y: -3 }}

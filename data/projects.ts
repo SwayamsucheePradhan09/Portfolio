@@ -35,7 +35,8 @@ const projects: Project[] = [
     ],
     highlight: "AI-Powered Exam Intelligence",
     teamSize: 4,
-    status: "In Development",
+    link: "https://rankforge-gate.vercel.app",
+    status: "Completed",
   },
   {
     title: "UNIFIED APIs - Universal API Proxy",
